@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD DOM - Quản Lý Sản Phẩm</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 py-10">
+
+  <h1 class="text-center text-3xl font-bold text-sky-600 mb-6">
+    Bài Tập CRUD DOM: Quản Lý Sản Phẩm
+  </h1>
+
+  <div class="max-w-2xl mx-auto bg-white shadow p-6 rounded">
+
+    <h2 class="text-xl font-semibold mb-4">Thêm Sản phẩm Mới</h2>
+
+    <input id="productName" class="w-full border p-2 mb-3" placeholder="Tên sản phẩm">
+    <input id="productPrice" class="w-full border p-2 mb-3" placeholder="Giá (VND)">
+
+    <button id="addBtn" class="bg-sky-500 text-white px-4 py-2 rounded">
+      Thêm Sản phẩm
+    </button>
+  </div>
+
+  <div class="max-w-2xl mx-auto mt-8 bg-white shadow p-6 rounded">
+    <h2 class="text-xl font-semibold mb-4">Danh sách Sản phẩm</h2>
+
+    <table class="w-full border">
+      <thead>
+        <tr class="bg-slate-300">
+          <th class="border p-2">ID</th>
+          <th class="border p-2">Tên Sản phẩm</th>
+          <th class="border p-2">Giá</th>
+          <th class="border p-2">Thao tác</th>
+        </tr>
+      </thead>
+
+      <tbody id="productList"></tbody>
+    </table>
+
+  </div>
+
+  <script src="./BangQLBH.js"></script>
+</body>
+</html>
